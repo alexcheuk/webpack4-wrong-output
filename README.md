@@ -78,4 +78,4 @@ non-entry.f26d78439489f8f9e993.js  183 bytes       0  [emitted]  non-entry
      main.6d0c4f8f202fe8a191b6.js  347 bytes       2  [emitted]  main
 ```
 
-Notice that main.js now uses `options.chunkFilename` template ([name].[chunkhash].js) when it is not suppose to because it is an entry file.
+Notice that main.js now uses `output.chunkFilename` template ([name].[chunkhash].js) and according to the docs (https://webpack.js.org/configuration/output/#output-chunkfilename), `output.chunkFilename` is not suppose to be apply to `main.js`.
